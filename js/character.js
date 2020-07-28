@@ -1,6 +1,6 @@
 $(function () {
 
-//キャラクタークラス
+    //キャラクタークラス
     function Character(_name, _picture, _top, _left) {
         const name = _name;
         const picture = _picture;
@@ -20,11 +20,17 @@ $(function () {
             return left;
         };
     }
-
-//キャラクターをインスタンス化
-    $('').on('click',function(){
-        const shimozono = new Character("Shimozono",'shimozono2.png',35,65);
-
-        $('.character2').html(<img src="picture/"+shimozono.getPicture>);
+    let i = 0;
+    //キャラクターをインスタンス化
+    $('#button').on('click', function () {
+            const shimozono = new Character("Shimozono", 'shimozono3.png', 35, 65);
+        const string = "shimozono3.png"
+        console.log(string);
+            i = i + 1
+            if ((i % 2) == 0) {
+                $('.character2').html('<img src="picture/'+string+'">');
+            } else {
+                $('.character2').html('<img src="picture/niidome3.png"' + '>');
+            }
     })
 });

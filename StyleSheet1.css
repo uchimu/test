@@ -7,7 +7,7 @@
     float:right;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 640px;
-    height:426px;
+    height:auto;
     background-image:url("./picture/home-office-336373_1280.jpg");
 
 }
@@ -27,14 +27,16 @@
     position: relative;
 }
 
-.caracter {
+.character {
     position: absolute;
     top:80%;
     left:65%;
 }
 
-.caracter2 {
+.character2 img{
     position: absolute;
+    width: auto;
+    height: 250px;
     top:35%;
     left:65%;
 }
