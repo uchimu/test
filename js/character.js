@@ -1,36 +1,29 @@
 $(function () {
 
-    //キャラクタークラス
-    function Character(_name, _picture, _top, _left) {
-        const name = _name;
-        const picture = _picture;
-        const top = _top;
-        const left = _left;
-
-        this.getName = function () {
-            return name;
-        };
-        this.getPicture = function () {
-            return picture;
-        };
-        this.getTop = function () {
-            return top;
-        };
-        this.getLeft = function () {
-            return left;
-        };
-    }
     let i = 0;
-    //キャラクターをインスタンス化
     $('#button').on('click', function () {
-            const shimozono = new Character("Shimozono", 'shimozono3.png', 35, 65);
-        const string = "shimozono3.png"
-        console.log(string);
+        const shimozono = {
+            pict : "shimozono3.png"
+        };
+        const spimg = {
+            pict : "picture/hammock_jiritsu_man.png",
+            top  : '40%',
+            left : '5%',
+            height : '150px'
+        };
+
             i = i + 1
-            if ((i % 2) == 0) {
-                $('.character2').html('<img src="picture/'+string+'">');
-            } else {
+            if ((i % 3) == 1) {
+                $('.character2').html('<img src="picture/'+shimozono.pict+'">');
+
+            } else if ((i % 3) == 2){
                 $('.character2').html('<img src="picture/niidome3.png"' + '>');
+            } else if ((i % 3) == 0){
+                $('.character2').html('<img src='+ spimg.pict +'>');
+                $('.character2 img').css({'top':spimg.top,'left':spimg.left,'height':spimg.height});
+            }else {
+                $('.character2').html('');
+
             }
     })
 });
