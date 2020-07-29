@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE jquery>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <!--jQueryの読み込み-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/character.js"></script>
+    <!---->
+    <title>sample</title>
+</head>
+
+<body class="mainbody">
+        <div id="back">
+            <form name= "inputform">
+            <!--入力フォーム本体 -->
+                <li id="paragraph2" class="signuplist">
+                    <label>
+                        <span class="signupSpan">ユーザーID*</span><input id="userId">
+                    </label>
+                </li>
+                <li class="signuplist">
+                    <label>
+                        <span class="signupSpan">パスワード*</span><input id="pass">
+                    </label>
+                </li>
+                <li class="signuplist">
+                    <label>
+                        <span class="signupSpan">氏名*</span><input id="userName">
+                    </label>
+                </li>
+                <li id="paragraph3" class="signuplist">
+                    <label>
+                        <span class="signupSpan">フリガナ</span><input id="userNameKana">
+                    </label>
+                </li>
+                <li class="signuplist">
+                    <label>
+                        <span class="signupSpan">郵便番号</span><input id="postalCode">
+                    </label>
+                </li>
+                <li class="signuplist">
+                    <label>
+                        <span class="signupSpan">住所</span><input id="address">
+                    </label>
+                </li>
+                <li id="paragraph3" class="signuplist">
+                    <label>
+                        <span class="signupSpan">電話番号</span><input id="tell">
+                    </label>
+                </li>
+                <li class="signuplist">
+                    <label>
+                        <span class="signupSpan">所属</span>
+                        <select id="belongs" class="signupInput bxAll bxAdmin bxCertification bxStay bxSearch bxConfirmation" name=”belong”>
+                            <option value=none>----</option>
+                            <option value = 北海道> 北海道 </option>
+                            <option value = 千葉> 千葉 </option>
+                            <option value = 大阪> 大阪 </option>
+                            <option value = 福岡> 福岡 </option>
+                            <option value = 鹿児島> 鹿児島 </option>
+                        </select>
+                    </label>
+                    <input id = "idSave" class="clAll clSave" type="button" value="登録" onclick="save()">
+                </li>
+            </form>
+        </div>
+</body>
+<!-- -->
+</html>
