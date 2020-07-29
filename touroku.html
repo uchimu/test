@@ -7,66 +7,78 @@
     <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
     <!--jQueryの読み込み-->
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/character.js"></script>
+    <script src="js/touroku.js"></script>
     <!---->
     <title>sample</title>
 </head>
 
 <body class="mainbody">
+    <div class="itemInputBlock">
+       ◇ アイテム登録 ◇
         <div id="back">
-            <form name= "inputform">
-            <!--入力フォーム本体 -->
-                <li id="paragraph2" class="signuplist">
-                    <label>
-                        <span class="signupSpan">ユーザーID*</span><input id="userId">
-                    </label>
-                </li>
+            <form name="inputform">
+                <!--入力フォーム本体 -->
                 <li class="signuplist">
                     <label>
-                        <span class="signupSpan">パスワード*</span><input id="pass">
+                        <span class="itemSpan">アイテムID</span><input id="itemId">
                     </label>
                 </li>
-                <li class="signuplist">
+                <li class="itemlist">
                     <label>
-                        <span class="signupSpan">氏名*</span><input id="userName">
+                        <span class="itemSpan">アイテム名</span><input id="itemName">
                     </label>
                 </li>
-                <li id="paragraph3" class="signuplist">
+                <li class="itemlist">
                     <label>
-                        <span class="signupSpan">フリガナ</span><input id="userNameKana">
-                    </label>
-                </li>
-                <li class="signuplist">
-                    <label>
-                        <span class="signupSpan">郵便番号</span><input id="postalCode">
-                    </label>
-                </li>
-                <li class="signuplist">
-                    <label>
-                        <span class="signupSpan">住所</span><input id="address">
-                    </label>
-                </li>
-                <li id="paragraph3" class="signuplist">
-                    <label>
-                        <span class="signupSpan">電話番号</span><input id="tell">
-                    </label>
-                </li>
-                <li class="signuplist">
-                    <label>
-                        <span class="signupSpan">所属</span>
-                        <select id="belongs" class="signupInput bxAll bxAdmin bxCertification bxStay bxSearch bxConfirmation" name=”belong”>
+                        <span class="itemSpan">所持フラグ</span>
+                        <select id="possessionFlg">
                             <option value=none>----</option>
-                            <option value = 北海道> 北海道 </option>
-                            <option value = 千葉> 千葉 </option>
-                            <option value = 大阪> 大阪 </option>
-                            <option value = 福岡> 福岡 </option>
-                            <option value = 鹿児島> 鹿児島 </option>
+                            <option value=0> 0 </option>
+                            <option value=1> 1 </option>
                         </select>
                     </label>
-                    <input id = "idSave" class="clAll clSave" type="button" value="登録" onclick="save()">
+                </li>
+                <li class="itemlist">
+                    <label>
+                        <span class="itemSpan">効果時間</span>
+                        <select id="effectiveTime">
+                            <option value=none>----</option>
+                            <option value=10> 10分 </option>
+                            <option value=20> 20分 </option>
+                        </select>
+                    </label>
+                </li>
+                <li class="itemlist">
+                    <label>
+                        <span class="itemSpan">所持数</span><input id="possessionNum">
+                    </label>
+                </li>
+                <li class="itemlist">
+                    <label>
+                        <span class="itemSpan">説明</span><input id="explanation">
+                    </label>
+                </li>
+                <li class="itemlist">
+                    <label>
+                        <span class="itemSpan">イラスト名</span><input id="illustration">
+                    </label>
+                </li>
+                <li class="itemlist">
+                    <label>
+                        <span class="itemSpan">削除フラグ</span>
+                        <select id="delFlg">
+                            <option value=none>----</option>
+                            <option value=0> 0 </option>
+                            <option value=1> 1 </option>
+                        </select>
+                    </label>
+                    <br>
+                    <input id="idSave" type="button" value="登録">
                 </li>
             </form>
         </div>
+    </div>
 </body>
 <!-- -->
+
 </html>

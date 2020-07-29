@@ -40,3 +40,14 @@
     top:35%;
     left:65%;
 }
+
+.itemSpan {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itemInputBlock {
+    background-color: floralwhite
+    margin: 50px
+}
