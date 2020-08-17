@@ -6,3 +6,4 @@ shimozono:とっとこハム太郎
 uchimura:ウナギのかば焼き
 shimozono:狐の嫁入り
 uchimura:リモートリポジトリ
+shimozono:リクルートスーツ
