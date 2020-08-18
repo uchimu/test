@@ -19,6 +19,7 @@ niidome:通天閣
 uchimura:くさかんむり
 shimozono:リストバンド
 niidome:道頓堀
+uchimura:臨床倫理
 
 
 
