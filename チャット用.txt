@@ -14,4 +14,5 @@ uchimura:どうぶつの森
 shimozono:緑黄色野菜
 niidome:犬も歩けば棒に当たる
 uchimura:ルートディレクトリ
-niidome:陸上生活
+niidome:陸上部
+
