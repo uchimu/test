@@ -16,6 +16,7 @@ niidome:犬も歩けば棒に当たる
 uchimura:ルートディレクトリ
 shimozono:理事長室
 niidome:通天閣
+uchimura:くさかんむり
 
 
 
