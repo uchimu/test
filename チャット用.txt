@@ -14,3 +14,4 @@ uchimura:どうぶつの森
 shimozono:緑黄色野菜
 niidome:犬も歩けば棒に当たる
 uchimura:ルートディレクトリ
+shimozono:理事長室
