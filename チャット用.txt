@@ -38,3 +38,5 @@ uchimura:リスク管理
 niidome:竜宮城
 shimozono:宇治金時
 uchimura:急流すべり
+niidome:リアルタイム
+
