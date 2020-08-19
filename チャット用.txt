@@ -35,3 +35,4 @@ uchimura:丑の刻参り
 niidome:リーマンショック
 shimozono:区画整理
 uchimura:リスク管理
+niidome:竜宮城
